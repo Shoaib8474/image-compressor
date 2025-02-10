@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compression Results</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Compression Results</h1>
+        
+        <div class="results">
+            <div class="result-item">
+                <h2>Original Image</h2>
+                <p><%= originalImage %></p>
+                <p>Size: <%= originalSize %> KB</p>
+            </div>
+            
+            <div class="result-item">
+                <h2>Compressed Image</h2>
+                <img src="/uploads/<%= compressedImage %>" alt="Compressed Image" style="max-width: 100%;">
+                <p><%= compressedImage %></p>
+                <p>Size: <%= compressedSize %> KB</p>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <a href="/" class="button">Compress Another Image</a>
+            <a href="/uploads/<%= compressedImage %>" class="button" download>Download Compressed Image</a>
+        </div>
+    </div>
+</body>
+</html>

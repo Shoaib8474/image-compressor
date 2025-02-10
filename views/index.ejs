@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Compression App</title>
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+</head>
+<body>
+  <h1>Image Compression App</h1>
+  <form action="/compress" method="POST" enctype="multipart/form-data">
+    <label for="image">Upload Image:</label>
+    <input type="file" name="image" id="image" accept="image/*" required>
+    <br><br>
+    <label for="size">Target File Size (KB):</label>
+    <input type="number" name="size" id="size" required>
+    <br><br>
+    <button type="submit">Compress</button>
+  </form>
+  <br> <br>
+  <footer>
+    <p> © Copyright 2025  lickweedian@gmail.com</p>
+  </footer>
+</body>
+</html>
