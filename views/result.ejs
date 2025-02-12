@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Compression Results</title>
+    <link rel="icon" type="image/x-icon" href="/icons8-compress.gif">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Image Compression Results</h1>
+        <h2>Image Compression Results</h2>
         
         <div class="results">
             <div class="result-item">
@@ -20,7 +21,8 @@
                 <h2>Compressed Image</h2>
                 <img src="/uploads/<%= compressedImage %>" alt="Compressed Image" style="max-width: 100%;">
                 <p><%= compressedImage %></p>
-                <p>Size: <%= compressedSize %> KB</p>
+                <br>
+                <p><strong>Size: <%= compressedSize %> KB</strong></p>
             </div>
         </div>
         
